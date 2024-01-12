@@ -14,5 +14,5 @@ def roi(initial_investment, current_value):
     
     Examples 
     --------
-    >>> calculate_roi(1000000, 1200000)
+    >>> roi(1000000, 1200000)
     """
