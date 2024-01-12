@@ -10,17 +10,20 @@ $ pip install financial_analyzer
 
 ## Functions 
 - `roi(initial_investment, current_value)`: Calculate the return on investment using the initial and current value of investment. 
-- `units_for_target_profit(fixed_costs, sales_price_per_unit, variable_cost_per_unit, desired_profit)`: Calculate the sales unit needed to reach desired profit. 
-- `breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit)`: Calculate the breakeven unit using fixed cost, variable cost, and sales price. 
-- `plot_breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units)`: Visulize fixed cost, variable cost, and revenue. 
+- `units_for_target_profit(fixed_costs, sales_price_per_unit, variable_cost_per_unit, desired_profit)`: Calculate the number of sold units needed to reach desired profit. 
+- `breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit)`: Calculate the break-even point in units (price needed), given a set of cost and revenue parameters. 
+- `plot_breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units)`: Visulize fixed cost, variable cost, and revenue through plotting linear equations. 
 
 ## Usage
 
 `financial_analyzer` can be used to calculate and plot an investment's roi and breakeven point as follows: 
 
 ```python 
-from financial-calculations-package-group-3.financial_analyzer import calculate_roi, calculate_units_for_target_profit, calculate_break_even_point, plot_break_even_point
-import matplotlib.pyplot as plt
+from financial_analyzer.roi import roi
+from financial_analyzer.units_for_target_profit import units_for_target_profit
+from financial_analyzer.breakeven_point import breakeven_point
+from financial_analyzer.plot_breakeven_point import plot_breakeven_point
+import plotly.express as px
 
 initial_investment = 400 
 current_value = 450
@@ -32,7 +35,6 @@ roi = roi(initial_investment, current_value)
 units_tg_profit = units_for_target_profit(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 200)
 break_even = breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit)
 fig = plot_breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 500)
-plt.show() 
 ```
 
 ## Python Ecosystem 
