@@ -10,7 +10,24 @@ $ pip install financial_analyzer
 
 ## Usage
 
-- TODO
+`financial_analyzer` can be used to calculate and plot an investment's roi and breakeven point as follows: 
+
+```python 
+from financial-calculations-package-group-3.financial_analyzer import calculate_roi, calculate_units_for_target_profit, calculate_break_even_point, plot_break_even_point
+import matplotlib.pyplot as plt
+
+initial_investment = 400 
+current_value = 450
+fixed_cost = 1000
+sales_price_per_unit = 8 
+variable_cost_per_unit = 2 
+
+roi = calculate_roi(initial_investment, current_value)
+units_tg_profit = calculate_units_for_target_profit(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 200)
+break_even = calculate_break_even_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit)
+fig = plot_break_even_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 500)
+plt.show() 
+```
 
 ## Contributing
 
