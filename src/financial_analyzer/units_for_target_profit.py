@@ -1,4 +1,4 @@
-def calculate_units_for_target_profit(fixed_costs, sales_price_per_unit, variable_cost_per_unit, desired_profit):
+def units_for_target_profit(fixed_costs, sales_price_per_unit, variable_cost_per_unit, desired_profit):
     """
     Calculate the number of units needed to be sold to achieve a desired profit.
 
@@ -27,7 +27,7 @@ def calculate_units_for_target_profit(fixed_costs, sales_price_per_unit, variabl
     >>> sales_price_per_unit = 5
     >>> variable_cost_per_unit = 2
     >>> desired_profit = 2000
-    >>> units_to_sell = calculate_units_for_target_profit(fixed_costs, 
+    >>> units_to_sell = units_for_target_profit(fixed_costs, 
                                                           sales_price_per_unit, 
                                                           variable_cost_per_unit, 
                                                           desired_profit)
