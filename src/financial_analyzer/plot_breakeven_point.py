@@ -32,7 +32,7 @@ def plot_breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_un
     >>> sales_price_per_unit = 5
     >>> variable_cost_per_unit = 2
     >>> max_units = 500
-    >>> plot_break_even_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units)
+    >>> plot_breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units)
     
     This will display an altair plot with the total cost, fixed cost, and total revenue lines, 
     illustrating the point where they intersect as the break-even point.
