@@ -1,6 +1,6 @@
 # financial_analyzer
 
-Calculate basic metrics of sales data and visualize the results.
+The `financial_analyzer` package has the goal of helping users solve various finance based problems related to accounting and business operations. The current iteration of the package can be used to understand a business's Cost and Revenue relationships, as well as the Return on Investment. The package implements and easy to use, plug and play parameter ingestion to produce financial results and indicators to help business owners, investors, or members of the financial community.
 
 ## Installation
 
@@ -39,7 +39,7 @@ fig = plot_breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_u
 
 ## Python Ecosystem 
 
-`financial_analyzer` possess its focus on answering the commonly needed metrics in finance. The purpose of the package is to allow easy way to access these metrics, and reuse across different files. 
+`financial_analyzer` possess its focus on answering the commonly needed metrics in finance. The purpose of the package is to allow easy way to access these metrics, and reuse across different files. The `financial_analyzer` is fairly unique in it's application as it does not make use of any other finance based packages to calculate it's metrics and results - however, the package will make use of several statistical and mathematical packages such as `NumPy`, `Pandas`, and `Matplotlib` to produce results for its custom functions. Our package contains a wide array of finance based functions and tools, a similar package is [`ROICalculator`](https://github.com/likeblood/ROICalculator) - at the current version our package is a lot simpler and we hope to work along side their team in the future!
 
 ## Contributing
 
