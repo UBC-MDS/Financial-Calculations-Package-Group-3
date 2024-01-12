@@ -45,6 +45,10 @@ fig = plot_breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_u
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
 
+## Contributors
+
+The following package was created by the following contributors: Alan Powichrowski, Chris Gao, Nicole T., Rafe Chang.
+
 ## License
 
 `financial_analyzer` was created by Nicole Tu, Rafe Chang, Alan PowPowichrowski, Chris Gao. It is licensed under the terms of the MIT license.
