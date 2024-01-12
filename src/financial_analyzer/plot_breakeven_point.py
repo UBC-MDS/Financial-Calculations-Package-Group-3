@@ -1,6 +1,6 @@
 import plotly.express as px
 
-def plot_break_even_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units):
+def plot_breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units):
     """
     Plot a break-even point graph which shows the relationship between total cost,
     total revenue, and number of units sold. This plot will include 3 lines, one for
