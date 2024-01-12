@@ -25,7 +25,7 @@ def breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit):
     >>> fixed_costs = 5000
     >>> sales_price_per_unit = 20
     >>> variable_cost_per_unit = 10
-    >>> break_even_units = calculate_break_even_point(fixed_costs, 
+    >>> break_even_units = breakeven_point(fixed_costs, 
     >>>     sales_price_per_unit, 
     >>>     variable_cost_per_unit)
     >>> print(break_even_units)
