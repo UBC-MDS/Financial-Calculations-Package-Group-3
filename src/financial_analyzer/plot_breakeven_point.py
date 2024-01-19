@@ -1,4 +1,4 @@
-import plotly.express as px
+import altair as alt
 
 def plot_breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit, max_units):
     """
