@@ -15,7 +15,3 @@ def test_units_for_target_profit():
 
     # Test Case 4: Edge case with very high sales price and variable cost
     assert units_for_target_profit(5000, 100, 80, 10000) == 250
-
-# Run the test using pytest
-if __name__ == "__main__":
-    pytest.main([__file__])
