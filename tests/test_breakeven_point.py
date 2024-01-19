@@ -27,3 +27,7 @@ def test_breakeven_point_zero_division():
     """Test breakeven point leading to zero division."""
     with pytest.raises(ZeroDivisionError):
         breakeven_point(5000, 10, 10)
+
+# Run the test using pytest
+if __name__ == "__main__":
+    pytest.main([__file__])
