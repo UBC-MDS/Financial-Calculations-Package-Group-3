@@ -32,4 +32,17 @@ def breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit):
     500
     """
 
+    #Check type is correct
+    for param in [fixed_costs, sales_price_per_unit, variable_cost_per_unit]:
+        if not isinstance(param, (float, int)):
+            raise TypeError("All parameters must be of type float or int.")
+
+    #Check value is positive
+    if fixed_costs < 0 or sales_price_per_unit < 0 or variable_cost_per_unit < 0:
+        raise ValueError("All parameters must be non-negative.")
+
+    #Check to avoid ZeroDivision error
+    if sales_price_per_unit <= variable_cost_per_unit:
+        raise ZeroDivisionError("Sales price per unit must be greater than variable cost per unit.")
+    
     return fixed_costs / (sales_price_per_unit - variable_cost_per_unit)
