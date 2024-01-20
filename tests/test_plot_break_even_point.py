@@ -1,11 +1,9 @@
-from finanancial_analyzer.plot_breakeven_point import plot_breakeven_point
-import numbers
+from financial_analyzer.plot_breakeven_point import plot_breakeven_point
 import pytest
+import altair as alt
 
 
-def test_graph_type():
-    assert isinstance(x, numbers.Number)
-    
+def test_graph_type():    
     """Create sample plot and test the plo type"""
     fixed_cost = 2
     sales_price_per_uni = 1
@@ -17,9 +15,7 @@ def test_graph_type():
     assert str(type(sample_plot)) == "<class 'altair.vegalite.v5.api.LayerChart'>", \
         "The output should be a layered chart"
 
-def test_graph_depth():
-    assert isinstance(x, numbers.Number)
-    
+def test_graph_depth():    
     """Create sample plot and test the depth of the layers"""
     fixed_cost = 2
     sales_price_per_uni = 1
@@ -31,7 +27,6 @@ def test_graph_depth():
     assert len(sample_plot.layer) == 9, f"There should be 9 layers, instead of {len(sample_plot.layer)}" 
 
 def test_graph_each_layer():
-
     """Create sample plot and test """
     fixed_cost = 2
     sales_price_per_uni = 1
@@ -52,7 +47,7 @@ def test_plot_data():
     max_unit = 10
 
     _, plot_df = plot_breakeven_point(fixed_cost, sales_price_per_uni, variable_cost_per_unit, max_unit)
-    assert plot_df.shape == (max_unit, 10), "The dataframe created for ploting has wrong dimension"
+    assert plot_df.shape == (max_unit, 5), "The dataframe created for ploting has wrong dimension"
     
     assert list(plot_df.columns) == ['Units', 'Total Revenue', \
                                      'Total Cost', 'Fixed Cost','Total Variable Cost'], \
