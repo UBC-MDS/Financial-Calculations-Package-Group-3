@@ -12,13 +12,13 @@ $ pip install financial_analyzer
 
 ### Developer Setup
 
-#### Clone the Repository 
+#### 1. Clone the Repository 
 ```bash
 $ git clone git@github.com:UBC-MDS/financial_analyzer.git
 ```
 Move to this directory in your terminal.
 
-#### Setup the Conda Environment
+#### 2. Setup the Conda Environment
 
 ```bash
 conda create --financial_analyzer python=3.9 -y
@@ -26,13 +26,21 @@ ca financial_analyzer
 ```
 Active this newly created environment.
 
-#### Instal the Package and Dependencies
+#### 3. Instal the Package and Dependencies
 
 ```bash
 poetry install 
 poetry add pandas
 poetry add numpy
 poetry add altair
+```
+## Test
+
+To test the functions of `financial_analyzer`, open terminal at the directory of `financial_analyzer` package, run below test Commands:
+
+```bash
+pytest tests/
+pytest tests/ --cov=financial_analyzer
 ```
 
 ## Functions 
@@ -63,13 +71,6 @@ units_tg_profit = units_for_target_profit(fixed_cost, sales_price_per_unit, vari
 break_even = breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit)
 fig = plot_breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 500)
 ```
-
-## Test
-
-To test the functions of `financial_analyzer`, open terminal at the directory of `financial_analyzer` package, run below test Commands:
-
-pytest tests/
-pytest tests/ --cov=financial_analyzer
 
 ## Python Ecosystem 
 
