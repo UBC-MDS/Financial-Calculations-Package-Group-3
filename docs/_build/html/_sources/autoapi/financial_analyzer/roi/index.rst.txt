@@ -1,0 +1,36 @@
+:py:mod:`financial_analyzer.roi`
+================================
+
+.. py:module:: financial_analyzer.roi
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   financial_analyzer.roi.roi
+
+
+
+.. py:function:: roi(initial_investment, current_value)
+
+   Calculate the Return on Investment (ROI).
+
+   :param initial_investment: The initial amount invested.
+   :type initial_investment: {float, int}
+   :param current_value: The current value of the investment.
+   :type current_value: {float, int}
+
+   :returns: **float**
+   :rtype: The ROI expressed as a percentage.
+
+   .. rubric:: Examples
+
+   >>> roi(1000000, 1200000)
+
+
