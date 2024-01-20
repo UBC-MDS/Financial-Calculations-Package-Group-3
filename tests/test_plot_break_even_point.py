@@ -42,3 +42,21 @@ def test_graph_each_layer():
 
     for i, layer in enumerate(sample_plot.layer):
         assert isinstance(layer, alt.Chart), f"Layer {i+1} is not an Altair Chart"
+
+def test_plot_data():
+    """Evaluates the format of data created by the plotting chart"""
+
+    fixed_cost = 2
+    sales_price_per_uni = 1
+    variable_cost_per_unit = 0.5
+    max_unit = 10
+
+    _, plot_df = plot_breakeven_point(fixed_cost, sales_price_per_uni, variable_cost_per_unit, max_unit)
+    assert plot_df.shape == (max_unit, 10), "The dataframe created for ploting has wrong dimension"
+    
+    assert list(plot_df.columns) == ['Units', 'Total Revenue', \
+                                     'Total Cost', 'Fixed Cost','Total Variable Cost'], \
+                                        "The dataset does not have the correct column names"
+    
+    assert all(isinstance(value, int) and value > 0 for value in plot_df['Units']), \
+        "The units should all be non-negative values"
