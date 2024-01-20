@@ -1,0 +1,26 @@
+:py:mod:`financial_analyzer`
+============================
+
+.. py:module:: financial_analyzer
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   breakeven_point/index.rst
+   financial_analyzer/index.rst
+   plot_breakeven_point/index.rst
+   roi/index.rst
+   units_for_target_profit/index.rst
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+
+   
+

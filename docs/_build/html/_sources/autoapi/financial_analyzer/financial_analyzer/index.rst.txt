@@ -1,0 +1,6 @@
+:py:mod:`financial_analyzer.financial_analyzer`
+===============================================
+
+.. py:module:: financial_analyzer.financial_analyzer
+
+
