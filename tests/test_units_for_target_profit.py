@@ -1,7 +1,7 @@
 # unit test for units_for_target_profit
 
 import pytest
-from financial_analyzer import units_for_target_profit
+from finanancial_analyzer.units_for_target_profit import units_for_target_profit
 
 def test_units_for_target_profit():
     # Test Case 1: Basic example
@@ -15,3 +15,7 @@ def test_units_for_target_profit():
 
     # Test Case 4: Edge case with very high sales price and variable cost
     assert units_for_target_profit(5000, 100, 80, 10000) == 250
+
+    # Test Case 5: Ensure the result is an integer
+    result = units_for_target_profit(2000, 10, 5, 1000)
+    assert isinstance(result, int)
