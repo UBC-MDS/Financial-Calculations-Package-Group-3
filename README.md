@@ -64,6 +64,13 @@ break_even = breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per
 fig = plot_breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 500)
 ```
 
+## Test
+
+To test the functions of `financial_analyzer`, open terminal at the directory of `financial_analyzer` package, run below test Commands:
+
+pytest tests/
+pytest tests/ --cov=financial_analyzer
+
 ## Python Ecosystem 
 
 `financial_analyzer` possess its focus on answering the commonly needed metrics in finance. The purpose of the package is to allow easy way to access these metrics, and reuse across different files. The `financial_analyzer` is fairly unique in it's application as it does not make use of any other finance based packages to calculate it's metrics and results - however, the package will make use of several statistical and mathematical packages such as `NumPy`, `Pandas`, and `Matplotlib` to produce results for its custom functions. Our package contains a wide array of finance based functions and tools, a similar package is [`ROICalculator`](https://github.com/likeblood/ROICalculator) - at the current version our package is a lot simpler and we hope to work along side their team in the future!
