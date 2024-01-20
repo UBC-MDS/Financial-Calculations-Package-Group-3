@@ -2,10 +2,37 @@
 
 The `financial_analyzer` package has the goal of helping users solve various finance based problems related to accounting and business operations. The current iteration of the package can be used to understand a business's Cost and Revenue relationships, as well as the Return on Investment. The package implements and easy to use, plug and play parameter ingestion to produce financial results and indicators to help business owners, investors, or members of the financial community.
 
-## Installation
+## Installation and Setup
+
+Financial_Analyzer is still in the development stage and not installable through PyPi. At this moment please follow the developer setup instructions to install and make use of the package.
 
 ```bash
 $ pip install financial_analyzer
+```
+
+### Developer Setup
+
+#### Clone the Repository 
+```bash
+$ git clone git@github.com:UBC-MDS/financial_analyzer.git
+```
+Move to this directory in your terminal.
+
+#### Setup the Conda Environment
+
+```bash
+conda create --financial_analyzer python=3.9 -y
+ca financial_analyzer
+```
+Active this newly created environment.
+
+#### Instal the Package and Dependencies
+
+```bash
+poetry install 
+poetry add pandas
+poetry add numpy
+poetry add altair
 ```
 
 ## Functions 
