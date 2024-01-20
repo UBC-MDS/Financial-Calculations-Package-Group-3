@@ -8,7 +8,7 @@ def test_units_for_target_profit():
     assert units_for_target_profit(3000, 5, 2, 2000) == 1667
 
     # Test Case 2: Edge case with zero fixed costs and desired profit
-    assert units_for_target_profit(0, 5, 2, 1000) == 500
+    assert units_for_target_profit(0, 5, 2, 1000) == 334
 
     # Test Case 3: Edge case with high fixed costs and desired profit
     assert units_for_target_profit(10000, 20, 5, 5000) == 1000
