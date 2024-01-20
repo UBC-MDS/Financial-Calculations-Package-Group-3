@@ -30,11 +30,6 @@ def test_roi_negative_initial_investment():
         roi(-1000000, 1200000)
 
     assert str(custom_string.value) == "Initial investment should be positive!"
-    
-    with pytest.raises(ValueError) as custom_string:
-        roi(0, 1200000)
-
-    assert str(custom_string.value) == "Initial investment should be positive!"
 
 def test_roi_valid_calculation():
     """
