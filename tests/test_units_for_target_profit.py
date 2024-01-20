@@ -14,7 +14,7 @@ def test_units_for_target_profit():
     assert units_for_target_profit(10000, 20, 5, 5000) == 1000
 
     # Test Case 4: Edge case with very high sales price and variable cost
-    assert units_for_target_profit(5000, 100, 80, 10000) == 250
+    assert units_for_target_profit(5000, 100, 80, 10000) == 750
 
     # Test Case 5: Ensure the result is an integer
     result = units_for_target_profit(2000, 10, 5, 1000)

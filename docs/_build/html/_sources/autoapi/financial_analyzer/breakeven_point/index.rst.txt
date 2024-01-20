@@ -1,0 +1,49 @@
+:py:mod:`financial_analyzer.breakeven_point`
+============================================
+
+.. py:module:: financial_analyzer.breakeven_point
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   financial_analyzer.breakeven_point.breakeven_point
+
+
+
+.. py:function:: breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit)
+
+   Calculate the break-even point in units, given as set of cost and revenue parameters.
+
+   :param fixed_costs: Total fixed costs in the problem, given as a float.
+   :type fixed_costs: float
+   :param sales_price_per_unit: The selling price of each unit in the problem, given as a float.
+   :type sales_price_per_unit: float
+   :param variable_cost_per_unit: The variable cost of each unit in the problem, given as a float.
+   :type variable_cost_per_unit: float
+
+   :returns: The break-even point in units for the given parameters.
+   :rtype: float
+
+   .. rubric:: Examples
+
+   Context: You are selling paintings, your fixed costs are
+   $5,000/month, each painting is sold for $20, the variable
+   costs (materials) for each painting are $10. What is your
+   break even point?
+   >>> fixed_costs = 5000
+   >>> sales_price_per_unit = 20
+   >>> variable_cost_per_unit = 10
+   >>> break_even_units = breakeven_point(fixed_costs,
+   >>>     sales_price_per_unit,
+   >>>     variable_cost_per_unit)
+   >>> print(break_even_units)
+   500
+
+
