@@ -1,3 +1,5 @@
+import math
+
 def units_for_target_profit(fixed_costs, sales_price_per_unit, variable_cost_per_unit, desired_profit):
     """
     Calculate the number of units needed to be sold to achieve a desired profit.
@@ -50,6 +52,7 @@ def units_for_target_profit(fixed_costs, sales_price_per_unit, variable_cost_per
     elif not all(isinstance(arg, (int, float)) for arg in [fixed_costs, sales_price_per_unit, variable_cost_per_unit, desired_profit]):
         raise TypeError("All input values must be numeric.")
     else:
-        return (fixed_costs + desired_profit) / (sales_price_per_unit - variable_cost_per_unit)
+        return math.ceil((fixed_costs + desired_profit) / (sales_price_per_unit - variable_cost_per_unit))
+
 
 
