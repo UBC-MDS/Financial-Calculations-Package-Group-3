@@ -1,4 +1,4 @@
-from financial_analyzer.breakeven_point import roi
+from financial_analyzer.roi import roi
 import pytest
 
 def test_roi_inputs_data_type():
