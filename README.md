@@ -26,13 +26,13 @@ ca financial_analyzer
 ```
 Active this newly created environment.
 
-#### 3. Instal the Package and Dependencies
+#### 3. Instal the Package
 
 ```bash
-poetry install 
-poetry add pandas
-poetry add numpy
-poetry add altair
+cd dist/
+pip install financial_analyzer-0.1.0-py3-none-any.whl
+tar xzf financial_analyzer-0.1.0.tar.gz
+pip install financial_analyzer-0.1.0/
 ```
 ## Test
 
