@@ -1,0 +1,8 @@
+﻿Metric,Value
+investment,1000
+desired_profit,2000
+fixed_cost,100
+sales_price_per_unit,1
+variable_cost_per_unit,0.5
+max_unit,1000
+current_value,1200
