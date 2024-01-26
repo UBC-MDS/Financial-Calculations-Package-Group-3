@@ -21,12 +21,12 @@ Move to this directory in your terminal.
 #### 2. Setup the Conda Environment
 
 ```bash
-conda create --financial_analyzer python=3.9 -y
+conda create -n --financial_analyzer python=3.9 -y
 ca financial_analyzer
 ```
 Active this newly created environment.
 
-#### 3. Instal the Package
+#### 3. Install the Package
 
 ```bash
 cd dist/
