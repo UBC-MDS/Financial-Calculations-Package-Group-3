@@ -31,6 +31,11 @@ Functions
 
    .. rubric:: Examples
 
-   >>> roi(1000000, 1200000)
+   Context: You are selling paintings, your initial investment is 1,000,000 dollars. 2 months later, the value of your initial investment grew to 1,200,000 dollars, what is your return on investment?
+   >>> initial_investment = 1000000
+   >>> current_value = 1200000
+   >>> roi = roi(initial_investment, current_value)
+   >>> print(f"The roi of your ivestment is {roi} %")
+   The roi of your ivestment is 20%
 
 

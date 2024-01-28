@@ -47,7 +47,8 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../example.html">Example usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../example.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../example.html#example-usage">Example usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../conduct.html">Code of Conduct</a></li>
@@ -126,9 +127,12 @@
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span> <span class="mi">1200000</span><span class="p">)</span>
-</pre></div>
-</div>
+<p>Context: You are selling paintings, your initial investment is 1,000,000 dollars. 2 months later, the value of your initial investment grew to 1,200,000 dollars, what is your return on investment?
+&gt;&gt;&gt; initial_investment = 1000000
+&gt;&gt;&gt; current_value = 1200000
+&gt;&gt;&gt; roi = roi(initial_investment, current_value)
+&gt;&gt;&gt; print(f”The roi of your ivestment is {roi} %”)
+The roi of your ivestment is 20%</p>
 </dd></dl>
 
 </section>
