@@ -1,4 +1,6 @@
 # financial_analyzer
+[![Documentation Status](https://readthedocs.org/projects/financial-analyzer/badge/?version=latest)](https://financial-analyzer.readthedocs.io/en/latest/?badge=latest)
+
 
 The `financial_analyzer` package has the goal of helping users solve various finance based problems related to accounting and business operations. The current iteration of the package can be used to understand a business's Cost and Revenue relationships, as well as the Return on Investment. The package implements and easy to use, plug and play parameter ingestion to produce financial results and indicators to help business owners, investors, or members of the financial community.
 
