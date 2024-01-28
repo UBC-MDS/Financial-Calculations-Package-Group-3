@@ -23,7 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Example usage" href="example.html" /> 
+    <link rel="next" title="Usage" href="example.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,7 +46,8 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="example.html">Example usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html#example-usage">Example usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conduct.html">Code of Conduct</a></li>
@@ -97,18 +98,18 @@
 </section>
 <section id="setup-the-conda-environment">
 <h4>2. Setup the Conda Environment<a class="headerlink" href="#setup-the-conda-environment" title="Link to this heading"></a></h4>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--financial_analyzer<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9<span class="w"> </span>-y
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>--financial_analyzer<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9<span class="w"> </span>-y
 ca<span class="w"> </span>financial_analyzer
 </pre></div>
 </div>
 <p>Active this newly created environment.</p>
 </section>
-<section id="instal-the-package-and-dependencies">
-<h4>3. Instal the Package and Dependencies<a class="headerlink" href="#instal-the-package-and-dependencies" title="Link to this heading"></a></h4>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>install<span class="w"> </span>
-poetry<span class="w"> </span>add<span class="w"> </span>pandas
-poetry<span class="w"> </span>add<span class="w"> </span>numpy
-poetry<span class="w"> </span>add<span class="w"> </span>altair
+<section id="install-the-package">
+<h4>3. Install the Package<a class="headerlink" href="#install-the-package" title="Link to this heading"></a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>dist/
+pip<span class="w"> </span>install<span class="w"> </span>financial_analyzer-0.1.0-py3-none-any.whl
+tar<span class="w"> </span>xzf<span class="w"> </span>financial_analyzer-0.1.0.tar.gz
+pip<span class="w"> </span>install<span class="w"> </span>financial_analyzer-0.1.0/
 </pre></div>
 </div>
 </section>
@@ -181,7 +182,7 @@ pytest<span class="w"> </span>tests/<span class="w"> </span>--cov<span class="o"
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="example.html" class="btn btn-neutral float-right" title="Example usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="example.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
