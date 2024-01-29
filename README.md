@@ -49,8 +49,8 @@ pip install financial_analyzer-0.1.0/
 To test the functions of `financial_analyzer`, open terminal at the directory of `financial_analyzer` package, run below test Commands:
 
 ```bash
-pytest tests/
-pytest tests/ --cov=financial_analyzer
+pip install pytest
+pytest tests
 ```
 
 ## Functions 
