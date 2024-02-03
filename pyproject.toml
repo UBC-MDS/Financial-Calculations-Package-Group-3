@@ -30,7 +30,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.semantic_release]
 version_toml = [
     "pyproject.toml:tool.poetry.version",
-]                                                    # version location
-branch = "main"                                      # branch to make releases of
-changelog_file = "CHANGELOG.md"                      # changelog file
-build_command = "pip install poetry && poetry build" # build dists
+] 
+branch = "main"                             
+changelog_file = "CHANGELOG.md"             
+build_command = "pip install poetry && poetry build"
