@@ -54,10 +54,10 @@ pytest tests
 ```
 
 ## Functions 
-- `roi()`: Calculate the return on investment using the initial and current value of investment. 
-- `units_for_target_profit()`: Calculate the number of sold units needed to reach desired profit. 
-- `breakeven_point()`: Calculate the break-even point in units (price needed), given a set of cost and revenue parameters. 
-- `plot_breakeven_point()`: Visulize fixed cost, variable cost, and revenue through plotting linear equations. 
+- `roi(initial_investment, current_value)`: Calculate the return on investment using the initial and current value of investment. 
+- `units_for_target_profit(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 200)`: Calculate the number of sold units needed to reach desired profit. 
+- `breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit)`: Calculate the break-even point in units (price needed), given a set of cost and revenue parameters. 
+- `plot_breakeven_point(fixed_cost, sales_price_per_unit, variable_cost_per_unit, 500)`: Visulize fixed cost, variable cost, and revenue through plotting linear equations. 
 
 ## Usage
 
