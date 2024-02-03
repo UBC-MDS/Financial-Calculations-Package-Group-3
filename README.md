@@ -96,7 +96,7 @@ The following package was created by the following contributors: Alan Powichrows
 
 ## License
 
-`financial_analyzer` was created by Nicole Tu, Rafe Chang, Alan PowPowichrowski, Chris Gao. It is licensed under the terms of the MIT license.
+`financial_analyzer` was created by Nicole Tu, Rafe Chang, Alan Powichrowski, Chris Gao. It is licensed under the terms of the MIT license.
 
 ## Credits
 
