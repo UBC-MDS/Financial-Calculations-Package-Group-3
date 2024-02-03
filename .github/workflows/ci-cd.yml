@@ -59,9 +59,9 @@ jobs:
       - name: Test install from TestPyPI
         run: |
             pip install \
-            --index-url https://test.pypi.org/project/financial_analyzer/ \
-            --extra-index-url https://pypi.org/project/financial_analyzer/ \
-            financial_analyzer
+            --index-url https://test.pypi.org/simple/ \
+            --extra-index-url https://pypi.org/simple \
+            mds_array_manipulation
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         if: steps.release.outputs.released == 'true'
