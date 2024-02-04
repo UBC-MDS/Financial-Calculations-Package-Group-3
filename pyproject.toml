@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "financial_analyzer"
-version = "0.2.2"
+version = "0.2.3"
 description = "Calculate basic metrics of sales data and visualize the results."
 authors = ["Nicole Tu, Rafe Chang, Alan PowPowichrowski, Chris Gao"]
 license = "MIT"

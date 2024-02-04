@@ -2,6 +2,17 @@
 
 
 
+## v0.2.3 (2024-02-04)
+
+### Fix
+
+* fix: Update breakeven_point.py - test on cicd (Chris Gao) ([`1d35318`](https://github.com/UBC-MDS/financial_analyzer/commit/1d35318e890a2801037a1ba6ad7e47e0569fcf9f))
+
+### Unknown
+
+* Update README.md ([`f9fa9ec`](https://github.com/UBC-MDS/financial_analyzer/commit/f9fa9eccff7fb7217cb7df954903a86d47b77dbb))
+
+
 ## v0.2.2 (2024-02-04)
 
 ### Fix
