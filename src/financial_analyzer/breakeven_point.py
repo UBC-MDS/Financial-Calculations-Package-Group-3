@@ -1,6 +1,6 @@
 def breakeven_point(fixed_costs, sales_price_per_unit, variable_cost_per_unit):
     """
-    Calculate the break-even point in units, given as set of cost and revenue parameters.
+    Calculate the break-even point in units, with given set of cost and revenue parameters.
 
     Parameters
     ----------
