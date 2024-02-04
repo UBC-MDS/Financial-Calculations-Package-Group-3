@@ -2,6 +2,19 @@
 
 
 
+## v0.2.4 (2024-02-04)
+
+### Fix
+
+* fix: update the plots (Rafe) ([`a2ae97f`](https://github.com/UBC-MDS/financial_analyzer/commit/a2ae97f67317496ee4b8b0312faba0859ba37bc6))
+
+### Unknown
+
+* Merge pull request #114 from UBC-MDS/examplefile_plot
+
+fix: update the plots (Rafe) ([`5a0c322`](https://github.com/UBC-MDS/financial_analyzer/commit/5a0c32250187ec376dfa0d666a3d8f5120f4b5af))
+
+
 ## v0.2.3 (2024-02-04)
 
 ### Fix
